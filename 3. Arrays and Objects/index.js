@@ -1,43 +1,128 @@
 /*
     Resources:
-    - JavaScript Tutorial on Objects: https://javascript.info/object
-    - freeCodeCamp on Objects: https://www.freecodecamp.org/news/objects-in-javascript-for-beginners/
-    - JavaScript Tutorial on Arrays: https://javascript.info/array
-    - freeCodeCamp on Arrays: https://www.freecodecamp.org/news/javascript-array-tutorial-array-methods-in-js/
+    - MDN Docs: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
 */
 
-let numbers = [
-    1, 89, 55, 63, 29, 19,
-    15, 77, 62, 68, 29, 84,
-    21, 26, 49
-];
+const randomNumber = Math.floor((Math.random() * 100) + 1); // feel free to mock this value for testing
 
-// Todo 3.1 Get the first, 5th, and last items in the numbers array.
-// Your code here
+// TODO 2.1 Display "more than fifty" if randomNumber is more than fifty
+if (randomNumber > 50) {
+    console.log("more than fifty");
+} else {
+    console.log("fifty or less");
+}
 
-// Todo 3.2 calculate the min, max, and the average of the numbers array
-// Your code here
 
-// Checkpoint 3.1 How would you compare lists in python vs arrays in JavaScript
+// TODO 2.2 Display whether the random number is odd or even
+if (randomNumber % 2 === 0) {
+    console.log(`${randomNumber} is even`);
+} else {
+    console.log(`${randomNumber} is odd`);
+}
+
+console.log("Random Number:", randomNumber);
+
+
+// TODO 2.3 If the number if a multiple of 3, write "fizz".
+// if the number is a multiple of 5 display "buzz".
+// if the number is divisible by both 3 and 5, display "fizzbuzz". otherwise, display the number
+if (randomNumber % 3 === 0 && randomNumber % 5 === 0) {
+    console.log("fizzbuzz");
+} else if (randomNumber % 3 === 0) {
+    console.log("fizz");
+} else if (randomNumber % 5 === 0) {
+    console.log("buzz");
+} else {
+    console.log(randomNumber);
+}
+
+console.log("Random Number:", randomNumber);
+
+
+// TODO 2.4 Use the ternary conditional operator to set toDisplay to "Even" if randomNumber is even and "Odd" if randomNumber is odd
+const toDisplay = randomNumber % 2 === 0 ? "Even" : "Odd";
+
+console.log(`Random Number: ${randomNumber}`);
+console.log(`toDisplay: ${toDisplay}`);
+
+
+// Checkpoint 2.1 How do you use switch statements and when would you use them? Try researching the answer
+// Answer: The switch statement is used to test thge equality of a variable against several valuesspecified in the test cases.
+
+// TODO 2.5 Use a for loop to print the numbers 1 to N
+const N = 10;
+
+for (let i = 1; i <= N; i++) {
+    console.log(i);
+}
+
+const list = ["apple", "banana", "cherry", "date", "elderberry"];
+// TODO 2.6 Use a while loop to display all the values in the list
+let index = 0;
+
+while (index < list.length) {
+    console.log(list[index]);
+    index++;
+}
+
+
+// Checkpoint 2.3 How would you simulate a do-while loop in JavaScript
+// Simulating a do-while loop
+let condition;
+do {
+    console.log("This code will be executed at least once.");
+
+    condition = false; 
+} while (condition);
+
+
+// TODO 2.7 Use a for of loop to display all the values in the list
+const list = ["apple", "banana", "cherry", "date", "elderberry"];
+
+for (const value of list) {
+    console.log(value);
+}
+
+
+// TODO 2.8 Use a for in loop to display all the values in the list
+const list = ["apple", "banana", "cherry", "date", "elderberry"];
+
+for (const index in list) {
+    const value = list[index];
+    console.log(value);
+}
+
+
+// TODO 2.9 Use the for each method of the list to display all its values 
+const list = ["apple", "banana", "cherry", "date", "elderberry"];
+
+list.forEach(value => {
+    console.log(value);
+});
+
+
+// Checkpoint 2.2 When should you use for of, for in, or .forEach loops? Try researching the answer
 // Answer: 
+for...of loop: Best suited for iterating over iterable objects like arrays, strings, or other iterable collections.
+for...in loop: Primarily used for iterating over the properties of an object. It iterates over all enumerable properties, including those in the prototype chain.
+forEach method: Specifically designed for arrays, and it allows you to iterate over each element in a more concise and expressive manner.
 
-// Todo 3.3 Declare an object with information about IT114L (course code, name, units, number of students)
-// Your code here
+// TODO 2.10 Use the try and catch block to catch division by zero errors in the code below.
+// In the finally block, simulate cleaning up resources by displaying "cleaning up resources"
+try {
+    const numerator = Math.floor((Math.random() * 100) + 1);
+    const denominator = Math.floor((Math.random() * 5)); // Mocked value for testing
 
-// Todo 3.4 Add professor name as one of the fields of the object. Display the value of professor name.
-// Your code here
+    if (denominator === 0) {
+        throw new Error("Division by zero error");
+    }
 
-// Todo 3.5 Declare and array of objects with information about the courses you are taking this term
-// Your code here
+    const quotient = numerator / denominator;
+    console.log("Quotient:", quotient);
+} catch (error) {
+    console.error("Error:", error.message);
+} finally {
+    console.log("Cleaning up resources");
+}
 
-// Todo 3.5 Calculate the total number of units you are taking this term using the array of objects.
-// Your code here
 
-// Checkpoint 3.2 What would be the equivalent of objects in python? How would you compare them?
-// Answer: 
-
-// Todo 3.6 Going back to the array of numbers, use the spread syntax to create a copy of the array with an additional number
-// Your code here
-
-// Todo 3.7 Going back to your IT114L object, extract the course code and units using the spread operator
-// Your code here
