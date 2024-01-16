@@ -48,8 +48,8 @@ console.log("Average:", average.toFixed(2));
 
 // Checkpoint 3.1 How would you compare lists in python vs arrays in JavaScript
 // Answer: 
-Python Lists: Can contain elements of different data types, and the type of the list can change dynamically.
-JavaScript Arrays: Can also contain elements of different data types, but JavaScript itself is dynamically typed, so the type of the array can change dynamically.
+// Python Lists: Can contain elements of different data types, and the type of the list can change dynamically.
+// JavaScript Arrays: Can also contain elements of different data types, but JavaScript itself is dynamically typed, so the type of the array can change dynamically.
 
 // Todo 3.3 Declare an object with information about IT114L (course code, name, units, number of students)
 const it114lCourse = {
@@ -135,8 +135,8 @@ console.log("Total Units this Term:", totalUnits);
 
 // Checkpoint 3.2 What would be the equivalent of objects in python? How would you compare them?
 // Answer: 
-JavaScript objects are often used as prototypes for creating instances using constructor functions or classes.
-Python dictionaries are part of the core language and are used widely for various purposes.
+// JavaScript objects are often used as prototypes for creating instances using constructor functions or classes.
+// Python dictionaries are part of the core language and are used widely for various purposes.
 
 // Todo 3.6 Going back to the array of numbers, use the spread syntax to create a copy of the array with an additional number
 const originalNumbers = [1, 2, 3, 4, 5];
