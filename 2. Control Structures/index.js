@@ -103,9 +103,9 @@ list.forEach(value => {
 
 // Checkpoint 2.2 When should you use for of, for in, or .forEach loops? Try researching the answer
 // Answer: 
-for...of loop: Best suited for iterating over iterable objects like arrays, strings, or other iterable collections.
-for...in loop: Primarily used for iterating over the properties of an object. It iterates over all enumerable properties, including those in the prototype chain.
-forEach method: Specifically designed for arrays, and it allows you to iterate over each element in a more concise and expressive manner.
+// for...of loop: Best suited for iterating over iterable objects like arrays, strings, or other iterable collections.
+// for...in loop: Primarily used for iterating over the properties of an object. It iterates over all enumerable properties, including those in the prototype chain.
+// forEach method: Specifically designed for arrays, and it allows you to iterate over each element in a more concise and expressive manner.
 
 // TODO 2.10 Use the try and catch block to catch division by zero errors in the code below.
 // In the finally block, simulate cleaning up resources by displaying "cleaning up resources"
