@@ -20,9 +20,9 @@ console.log(myConstantVariable);
 
 // Checkpoint 1.1 What is the difference between var, let, and const?
 // Answer: 
-var: Has function-level scope. Variables declared with var are scoped to the nearest function block.
-let: Has block-level scope. Variables declared with let are scoped to the nearest enclosing block, whether it's a loop, a conditional statement, or a function.
-const: Also has block-level scope like let, but once assigned, the value cannot be reassigned.
+// var: Has function-level scope. Variables declared with var are scoped to the nearest function block.
+// let: Has block-level scope. Variables declared with let are scoped to the nearest enclosing block, whether it's a loop, a conditional statement, or a function.
+// const: Also has block-level scope like let, but once assigned, the value cannot be reassigned.
 
 
 // TODO 1.4 Try out the different arithmetic operators
